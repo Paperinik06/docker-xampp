@@ -1,0 +1,118 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #36393f;
+    color: #dcddde;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #2f3136;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.sidebar a {
+    background-color: #40444b;
+    color: #dcddde;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #4f545c;
+}
+
+.sidebar a.active {
+    background-color: #7289da;
+}
+
+.content {
+    flex-grow: 1;
+    margin-left: 220px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.content header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#message-area {
+    background-color: #40444b;
+    border: 1px solid #4f545c;
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#message-form {
+    display: flex;
+    width: 80%;
+    gap: 10px;
+}
+
+#message {
+    background-color: #40444b;
+    color: #dcddde;
+    border: 1px solid #4f545c;
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+}
+
+#message:focus {
+    outline: none;
+    border-color: #7289da;
+}
+
+button[type="submit"] {
+    background-color: #7289da;
+    color: #dcddde;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #677bc4;
+}
+.message {
+    background-color: #4f545c;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+.username {
+    font-weight: bold;
+    color: #b9bbbe;
+    margin-bottom: 5px;
+}
+
+.message-text {
+    color: #dcddde;
+}
